@@ -4,6 +4,10 @@
     font: inherit;
 }
 
+a {
+    text-decoration: none;
+}
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
@@ -12,31 +16,35 @@
 .top {
     height: 800px;
     background-color: #E1FF8F;
+    background-image: url(images/stars1.png);
+    background-repeat: no-repeat;
     padding-top: 196px;
     display: flex;
     flex-direction: column;
     gap: 48px;
-    &__title {
-        font-size: 64px;
-        font-weight: 700;
+    &__content {
+        width: 779px;
     }
-    &__tagline {
-        font-size: 24px;
-        font-weight: 400;
+    strong {
+        font-weight: 600px;
     }
 }
 
-.tags {
-    width: 779px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.tagline {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
 }
 
 .button {
     width: 247px;
     padding-right: 65px;
-    padding-left: 16px;
+    padding-left: 65px;
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 24px;
@@ -45,5 +53,65 @@
     background-color: #202027;
     border-radius: 60px;
     box-sizing: border-box;
+}
+
+.about {
+    padding-top: 94px;
+    background-color: #202027;
+    background-image: url(images/stars2.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__title {
+        color: #FFFFFF;
+    }
+    &__tagline {
+        color: #FFFFFF;
+    }
+    // &__top {
+    //     width: 788px;
+    // }
+}
+
+.container {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    
+   
 
 }
+
+.item {
+    background-color: #FFFFFF;
+    color: #202027;
+    border-radius: 30px;
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: start;
+        padding: 32px;
+        padding-bottom: 36px;
+    }
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #F7F7F7;
+        border-radius: 52px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        width: fit-content;
+    }
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+
+
