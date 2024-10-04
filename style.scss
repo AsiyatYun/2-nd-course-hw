@@ -11,6 +11,8 @@
 
 a {
     text-decoration: none;
+    color: inherit;
+    
 }
 
 strong {
@@ -18,7 +20,7 @@ strong {
 }
 
 .top {
-    height: 800px;
+    height: 710px;
     background-color: #E1FF8F;
     background-image: url(images/stars1.png);
     background-repeat: no-repeat;
@@ -44,6 +46,7 @@ strong {
 }
 
 .button {
+    
     width: 247px;
     padding-right: 65px;
     padding-left: 65px;
@@ -55,6 +58,12 @@ strong {
     background-color: #202027;
     border-radius: 60px;
     box-sizing: border-box;
+    &:hover {
+        border: 1px solid #000000;
+        background-color: #FFFFFF;
+        color: #000000;
+
+    }
 }
 
 .about {
@@ -95,6 +104,10 @@ strong {
     color: #202027;
     border-radius: 30px;
     height: fit-content;
+    transition: transform 1s;
+    &:hover {
+        transform: scale(1.2);
+    }
     
    
 
