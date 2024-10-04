@@ -4,13 +4,17 @@
     font: inherit;
 }
 
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
 a {
     text-decoration: none;
 }
 
-.center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+strong {
+    font-weight: bold;
 }
 
 .top {
@@ -25,9 +29,7 @@ a {
     &__content {
         width: 779px;
     }
-    strong {
-        font-weight: 600px;
-    }
+    
 }
 
 .title {
@@ -57,8 +59,9 @@ a {
 
 .about {
     padding-top: 94px;
+    padding-bottom: 50px;
     background-color: #202027;
-    background-image: url(images/stars2.png);
+    background-image: url(images/stars2.png);    
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
@@ -78,8 +81,12 @@ a {
     margin-top: 72px;
     display: flex;
     flex-wrap: wrap;
-    
-   
+    gap: 32px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
 
 }
 
@@ -87,6 +94,15 @@ a {
     background-color: #FFFFFF;
     color: #202027;
     border-radius: 30px;
+    height: fit-content;
+    
+   
+
+    &__image {
+        object-fit: cover;
+        border-radius: 30px;
+        
+    }
     
     &__text {
         display: flex;
@@ -94,7 +110,7 @@ a {
         gap: 16px;
         align-items: start;
         padding: 32px;
-        padding-bottom: 36px;
+        
     }
     &__number {
         font-size: 16px;
