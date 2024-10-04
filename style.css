@@ -19,22 +19,22 @@ button {
   font: inherit;
 }
 
-strong {
-  font-weight: bold;
-}
-
 .top {
   height: 710px;
   background-color: #E1FF8F;
   background-image: url(images/stars1.png);
   background-repeat: no-repeat;
+  background-position: 100px -350px;
   padding-top: 196px;
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
 .top__content {
-  max-width: 779px;
+  max-width: 769px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .title {
@@ -43,9 +43,11 @@ strong {
 }
 
 .tagline {
-  margin-top: 24px;
   font-size: 24px;
   font-weight: 400;
+}
+.tagline strong {
+  font-weight: 600;
 }
 
 .button {
@@ -78,6 +80,10 @@ strong {
 }
 .about__title {
   color: #FFFFFF;
+  padding-bottom: 24px;
+}
+.about__title_mob {
+  display: none;
 }
 .about__tagline {
   color: #FFFFFF;
@@ -110,6 +116,7 @@ strong {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
+  width: 100%;
 }
 .item__text {
   display: flex;
@@ -144,6 +151,10 @@ strong {
     padding-top: 147px;
     gap: 36px;
     align-items: center;
+    height: 648px;
+    background-image: url(images/stars-mob.png);
+    background-position: 5px -110px;
+    background-size: cover;
   }
   .top__content {
     text-align: center;
@@ -157,5 +168,17 @@ strong {
   .button {
     font-size: 16px;
     max-width: 285px;
+  }
+  .about {
+    padding-top: 48px;
+  }
+  .about__top {
+    display: none;
+  }
+  .about__title_mob {
+    display: block;
+  }
+  .container {
+    margin-top: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

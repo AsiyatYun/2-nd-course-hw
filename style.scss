@@ -21,21 +21,23 @@ button {
     font: inherit;
 }
 
-strong {
-    font-weight: bold;
-}
+
 
 .top {
     height: 710px;
     background-color: #E1FF8F;
     background-image: url(images/stars1.png);
     background-repeat: no-repeat;
+    background-position: 100px -350px;    
     padding-top: 196px;
     display: flex;
     flex-direction: column;
     gap: 48px;
     &__content {
-        max-width: 779px;
+        max-width: 769px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;  
     }
     
 }
@@ -46,9 +48,11 @@ strong {
 }
 
 .tagline {
-    margin-top: 24px;
     font-size: 24px;
     font-weight: 400;
+    strong {
+        font-weight: 600;
+    }
 }
 
 .button {
@@ -83,6 +87,10 @@ strong {
     
     &__title {
         color: #FFFFFF;
+        padding-bottom: 24px;
+        &_mob {
+            display: none;
+        }
     }
     &__tagline {
         color: #FFFFFF;
@@ -120,7 +128,7 @@ strong {
     &__image {
         object-fit: cover;
         border-radius: 30px;
-        
+        width: 100%;
     }
     
     &__text {
