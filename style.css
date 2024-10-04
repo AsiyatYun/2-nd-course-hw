@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+  font-family: montserrat;
 }
 
 .center {
@@ -12,6 +12,11 @@
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  font-style: inherit;
+  font: inherit;
 }
 
 strong {
@@ -29,7 +34,7 @@ strong {
   gap: 48px;
 }
 .top__content {
-  width: 779px;
+  max-width: 779px;
 }
 
 .title {
@@ -128,4 +133,29 @@ strong {
 .item__name {
   font-size: 32px;
   font-weight: 700;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    padding-top: 147px;
+    gap: 36px;
+    align-items: center;
+  }
+  .top__content {
+    text-align: center;
+  }
+  .title {
+    font-size: 40px;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 16px;
+    max-width: 285px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,8 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    font: inherit;
+    font-family: montserrat;
 }
+
+
 
 .center {
     padding-left: calc(50% - 600px);
@@ -12,7 +14,11 @@
 a {
     text-decoration: none;
     color: inherit;
-    
+}
+
+button {
+    font-style: inherit;
+    font: inherit;
 }
 
 strong {
@@ -29,7 +35,7 @@ strong {
     flex-direction: column;
     gap: 48px;
     &__content {
-        width: 779px;
+        max-width: 779px;
     }
     
 }
@@ -142,5 +148,5 @@ strong {
     }
 }
 
-
+@import 'mobile';
 
