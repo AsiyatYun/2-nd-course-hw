@@ -121,7 +121,7 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 30px;
-  width: 100%;
+  max-width: 100%;
 }
 .item__text {
   display: flex;
