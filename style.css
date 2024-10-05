@@ -68,6 +68,9 @@ button {
   background-color: #FFFFFF;
   color: #000000;
 }
+.button-mob {
+  display: none;
+}
 
 .about {
   padding-top: 94px;
@@ -81,9 +84,6 @@ button {
 .about__title {
   color: #FFFFFF;
   padding-bottom: 24px;
-}
-.about__title_mob {
-  display: none;
 }
 .about__tagline {
   color: #FFFFFF;
@@ -101,16 +101,21 @@ button {
   gap: 32px;
 }
 
+.container-mob {
+  display: none;
+}
+
 .item {
   background-color: #FFFFFF;
   color: #202027;
   border-radius: 30px;
   height: -moz-fit-content;
   height: fit-content;
+  max-width: 378px;
   transition: transform 1s;
 }
 .item:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .item__image {
   -o-object-fit: cover;
@@ -155,6 +160,7 @@ button {
     background-image: url(images/stars-mob.png);
     background-position: 5px -110px;
     background-size: cover;
+    text-align: center;
   }
   .top__content {
     text-align: center;
@@ -164,10 +170,15 @@ button {
   }
   .tagline {
     font-size: 16px;
+    display: inline;
   }
   .button {
     font-size: 16px;
     max-width: 285px;
+    text-align: center;
+  }
+  .button-mob {
+    display: block;
   }
   .about {
     padding-top: 48px;
@@ -175,10 +186,25 @@ button {
   .about__top {
     display: none;
   }
-  .about__title_mob {
-    display: block;
-  }
   .container {
+    display: none;
+  }
+  .container-mob {
+    display: flex;
+    flex-direction: column;
     margin-top: 24px;
+    align-items: center;
+    gap: 24px;
+  }
+  .item__number {
+    display: none;
+  }
+  .item__description {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .item__text {
+    padding: 29px;
+    padding-bottom: 32px;
   }
 }/*# sourceMappingURL=style.css.map */

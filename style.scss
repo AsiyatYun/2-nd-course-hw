@@ -74,6 +74,9 @@ button {
         color: #000000;
 
     }
+    &-mob {
+        display: none;
+    }
 }
 
 .about {
@@ -88,9 +91,6 @@ button {
     &__title {
         color: #FFFFFF;
         padding-bottom: 24px;
-        &_mob {
-            display: none;
-        }
     }
     &__tagline {
         color: #FFFFFF;
@@ -110,7 +110,10 @@ button {
         flex-direction: column;
         gap: 32px;
     }
+}
 
+.container-mob {
+    display: none;
 }
 
 .item {
@@ -118,13 +121,12 @@ button {
     color: #202027;
     border-radius: 30px;
     height: fit-content;
+    max-width: 378px;
     transition: transform 1s;
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     
-   
-
     &__image {
         object-fit: cover;
         border-radius: 30px;

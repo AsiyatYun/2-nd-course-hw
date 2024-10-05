@@ -11,6 +11,7 @@
         background-image: url(images/stars-mob.png);
         background-position: 5px -110px;
         background-size: cover;
+        text-align: center; 
         &__content {
            text-align: center; 
         }
@@ -21,23 +22,44 @@
     }
     .tagline {
         font-size: 16px;
-        
+        display: inline;
     }
     .button {
         font-size: 16px;
         max-width: 285px;
+        text-align: center;
+        &-mob {
+            display: block;
+        }
     }
     .about {
         padding-top: 48px;
         &__top {
             display: none;
-        }
-        &__title_mob {
-            display: block;
-        }
+        }       
     }
     .container {
-        margin-top: 24px;
+        display: none;
     }
+    .container-mob {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+        align-items: center;
+        gap: 24px;
+    }
+    .item {
+        &__number {
+            display: none;
+        }
+        &__description {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &__text {
+            padding: 29px;
+            padding-bottom: 32px;
+        }
+    }    
 
 }
