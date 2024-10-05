@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-style: inherit;
+    font: inherit;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.top {
+    height: 710px;
+    background-color: #E1FF8F;
+    background-image: url(images/stars1.png);
+    background-repeat: no-repeat;
+    padding-top: 196px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    &__content {
+        max-width: 779px;
+    }
+    
+}
+
+.title {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.tagline {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.button {
+    
+    width: 247px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #202027;
+    border-radius: 60px;
+    box-sizing: border-box;
+    &:hover {
+        border: 1px solid #000000;
+        background-color: #FFFFFF;
+        color: #000000;
+
+    }
+}
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    background-color: #202027;
+    background-image: url(images/stars2.png);    
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__title {
+        color: #FFFFFF;
+    }
+    &__tagline {
+        color: #FFFFFF;
+    }
+    // &__top {
+    //     width: 788px;
+    // }
+}
+
+.container {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+}
+
+.item {
+    background-color: #FFFFFF;
+    color: #202027;
+    border-radius: 30px;
+    height: fit-content;
+    transition: transform 1s;
+    &:hover {
+        transform: scale(1.2);
+    }
+    
+   
+
+    &__image {
+        object-fit: cover;
+        border-radius: 30px;
+        
+    }
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: start;
+        padding: 32px;
+        
+    }
+    &__number {
+        font-size: 16px;
+        font-weight: 500;
+        background-color: #F7F7F7;
+        border-radius: 52px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 10px;
+        width: fit-content;
+    }
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+@import 'mobile';
+
