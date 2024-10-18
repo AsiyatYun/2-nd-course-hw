@@ -156,6 +156,9 @@ button {
   gap: 32px;
   padding-top: 48px;
 }
+.games-container {
+  padding-bottom: 144px;
+}
 .games__item {
   display: flex;
   justify-content: flex-start;
@@ -191,6 +194,17 @@ button {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 12px;
+}
+
+.footer {
+  height: 150px;
+  background-color: #BDED35;
+  text-align: center;
+}
+.footer__text {
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 60px;
 }
 
 @media (max-width: 767px) {
