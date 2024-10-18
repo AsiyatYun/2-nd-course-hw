@@ -46,6 +46,10 @@ button {
 .title {
     font-size: 64px;
     font-weight: 700;
+    &-white {
+        color: #FFFFFF;
+        padding-bottom: 24px;
+    }
 }
 
 .tagline {
@@ -59,8 +63,9 @@ button {
 .button {
     
     width: 247px;
-    padding-right: 65px;
-    padding-left: 65px;
+    // padding-right: 65px;
+    // padding-left: 65px;
+    text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
     font-size: 24px;
@@ -80,19 +85,20 @@ button {
     }
 }
 
-.about {
-    padding-top: 94px;
-    padding-bottom: 50px;
+.content {
     background-color: #202027;
     background-image: url(images/stars2.png);    
     background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
-    
-    &__title {
-        color: #FFFFFF;
-        padding-bottom: 24px;
-    }
+
     &__tagline {
         color: #FFFFFF;
     }
@@ -111,11 +117,13 @@ button {
         flex-direction: column;
         gap: 32px;
     }
+    
+    &-mob {
+        display: none;
+    }
 }
 
-.container-mob {
-    display: none;
-}
+
 
 .item {
     background-color: #FFFFFF;
@@ -127,8 +135,9 @@ button {
     &:hover {
         transform: scale(1.1);
     }
-    
+
     &__image {
+        // flex-basis: 50%;
         display: block;
         object-fit: cover;
         border-radius: 30px;
@@ -158,8 +167,59 @@ button {
         font-size: 32px;
         font-weight: 700;
     }
-
+    
 }
+
+.games {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 48px;
+    
+    
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 100%;
+        height: fit-content;
+        height: 500px;
+        &_odd {
+            flex-direction: row-reverse;
+        }
+
+    }
+    &__image {
+        width: 50%;
+        border-radius: 30px;
+        display: block;
+        object-fit: cover;
+
+    }
+    
+    
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: start;
+        padding: 48px;
+        padding-bottom: 36px;
+        padding-right: 10%;
+    }
+    
+    &__name {
+        font-size: 48px;
+        font-weight: 700;
+    }
+    &__description {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+}
+
+
+
 
 @import 'mobile';
 

@@ -45,14 +45,14 @@
 // let guest = prompt('Ваше имя?');
 // alert(`Привет, ${guest}!`);
 
-let number = Number(prompt("Загадайте число"));
-let number2 = number * 2;
-alert(`умножить на 2 = ${number2}`);
-let number3 = number2 + 10;
-alert(`прибавить 10 = ${number3}`);
-let number4 = number3 / 2;
-alert(`разделить на 2 = ${number4}`);
-let number5 =number4 - number;
-alert(`вычтем загаданное число = ${number5}`);
-alert('Ответ равен 5');
+// let number = Number(prompt("Загадайте число"));
+// let number2 = number * 2;
+// alert(`умножить на 2 = ${number2}`);
+// let number3 = number2 + 10;
+// alert(`прибавить 10 = ${number3}`);
+// let number4 = number3 / 2;
+// alert(`разделить на 2 = ${number4}`);
+// let number5 =number4 - number;
+// alert(`вычтем загаданное число = ${number5}`);
+// alert('Ответ равен 5');
 
