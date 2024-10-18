@@ -183,9 +183,9 @@ button {
         display: flex;
         justify-content: flex-start;
         max-width: 100%;
-        height: fit-content;
         height: 500px;
-        &_odd {
+        
+        &:nth-child(odd) {
             flex-direction: row-reverse;
         }
 
@@ -205,8 +205,9 @@ button {
         gap: 24px;
         align-items: start;
         padding: 48px;
-        padding-bottom: 36px;
-        padding-right: 10%;
+        padding-right: 8%;
+        box-sizing: border-box;
+        width: 50%;
     }
     
     &__name {

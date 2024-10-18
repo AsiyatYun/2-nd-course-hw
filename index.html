@@ -34,7 +34,7 @@
             <div class="container">
                 <div class="container__item">
                     <div class="item">
-                        <a href="#">
+                        <a href="#guess">
                             <img class="item__image" src="images/about1.jpg" alt="обложка карточки">
                             <div class="item__text">
                                 <p class="item__number">Игра № 1</p>
@@ -43,7 +43,7 @@
                         </a>    
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="#rock">
                             <img class="item__image" src="images/about4.jpg" alt="обложка карточки">
                             <div class="item__text">
                             <div class="item__number">Игра № 4</div>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="container__item">
                     <div class="item">
-                        <a href="#">
+                        <a href="#math">
                             <img class="item__image" src="images/about2.jpg" alt="обложка карточки">
                             <div class="item__text">
                             <div class="item__number">Игра № 2</div>
@@ -64,7 +64,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="#quiz">
                             <img class="item__image" src="images/about5.jpg" alt="обложка карточки">
                             <div class="item__text">
                             <div class="item__number">Игра № 5</div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="container__item">
                     <div class="item">
-                        <a href="#">
+                        <a href="#turn">
                             <img class="item__image" src="images/about3.jpg" alt="обложка карточки">
                             <div class="item__text">
                             <div class="item__number">Игра № 3</div>
@@ -84,7 +84,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="#">
+                        <a href="#random">
                             <img class="item__image" src="images/about6.jpg" alt="обложка карточки">
                             <div class="item__text">
                             <div class="item__number">Игра № 6</div>
@@ -168,62 +168,55 @@
         <div class="games-container center">
             <h1 class="title title-white">Мини-игры</h1>
             <div class="games">
-                <a href="#">
-                    <div class="item games__item games__item_odd">
-                            <img class="games__image" src="images/about1.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Угадай число</h2>
-                                <p class="games__description">Попробуй угадать случайное число от 1 до 100.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a>
-                <a href="#">
-                    <div class="item games__item">
-                            <img class="games__image" src="images/about2.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Простая     арифметика</h2>
-                                <p class="games__description">Попробуй решить простые арифметические задачи.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a><a href="#">
-                    <div class="item games__item games__item_odd">
-                            <img class="games__image" src="images/about3.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Переверни текст</h2>
-                                <p class="games__description">Попробуй ввести текст, который будет перевернут.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a><a href="#">
-                    <div class="item games__item">
-                            <img class="games__image" src="images/about4.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Викторина</h2>
-                                <p class="games__description">Отвечай на вопросы викторины с вариантами ответов.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a><a href="#">
-                    <div class="item games__item games__item_odd">
-                            <img class="games__image" src="images/about5.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Камень, ножницы, бумага</h2>
-                                <p class="games__description">Сыграй в популярную игру против компьютера.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a><a href="#">
-                    <div class="item games__item">
-                            <img class="games__image" src="images/about6.jpg" alt="обложка карточки">
-                            <div class="games__text ">
-                                <h2 class="games__name">Генератор случайных цветов</h2>
-                                <p class="games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p> 
-                                <button class="button" href="#">Играть!</button>                           
-                            </div>
-                    </div>  
-                </a>
+                <div class="item games__item" id="guess">
+                        <img class="games__image" src="images/about1.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Угадай число</h2>
+                            <p class="games__description">Попробуй угадать случайное число от 1 до 100.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div> 
+                <div class="item games__item" id="math">
+                        <img class="games__image" src="images/about2.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Простая арифметика</h2>
+                            <p class="games__description">Попробуй решить простые арифметические задачи.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div> 
+                <div class="item games__item" id="turn">
+                        <img class="games__image" src="images/about3.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Переверни текст</h2>
+                            <p class="games__description">Попробуй ввести текст, который будет перевернут.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div> 
+                <div class="item games__item" id="quiz">
+                        <img class="games__image" src="images/about4.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Викторина</h2>
+                            <p class="games__description">Отвечай на вопросы викторины с вариантами ответов.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div> 
+                <div class="item games__item" id="rock">
+                        <img class="games__image" src="images/about5.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Камень, ножницы, бумага</h2>
+                            <p class="games__description">Сыграй в популярную игру против компьютера.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div> 
+                <div class="item games__item" id="random">
+                        <img class="games__image" src="images/about6.jpg" alt="обложка карточки">
+                        <div class="games__text ">
+                            <h2 class="games__name">Генератор случайных цветов</h2>
+                            <p class="games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p> 
+                            <button class="button" href="#">Играть!</button>                           
+                        </div>
+                </div>  
+                
                 
             </div>
         </div>

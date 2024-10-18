@@ -163,11 +163,9 @@ button {
   display: flex;
   justify-content: flex-start;
   max-width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
   height: 500px;
 }
-.games__item_odd {
+.games__item:nth-child(odd) {
   flex-direction: row-reverse;
 }
 .games__image {
@@ -183,8 +181,9 @@ button {
   gap: 24px;
   align-items: start;
   padding: 48px;
-  padding-bottom: 36px;
-  padding-right: 10%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  width: 50%;
 }
 .games__name {
   font-size: 48px;
