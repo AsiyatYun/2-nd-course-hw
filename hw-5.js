@@ -11,6 +11,7 @@ function gameGuess() {
 		} 
 		else {
 			alert('Некорректное значение');
+			break;
 		}
 		answer = Number(prompt('Попробуй снова!'));	
 	}
