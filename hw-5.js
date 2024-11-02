@@ -1,9 +1,8 @@
 let solution = Math.floor(Math.random() * 100) + 1;
 console.log(solution);
-let answer = Number(prompt('Я загадал число от 1 до 100. Попробуй угадать его!'));
 
-
-
+function gameGuess() {	
+	let answer = Number(prompt('Я загадал число от 1 до 100. Попробуй угадать его!'));
 	while (answer !== solution) {
 		if (answer > solution) {
 			alert('Загаданное число меньше');
@@ -17,7 +16,15 @@ let answer = Number(prompt('Я загадал число от 1 до 100. Поп
 	}
 	if (answer === solution) { 
 		alert('Поздравляю! Ты угадал!');
-	}
+	}	
+}
 
 
+// Задания на работу с кодом
+
+let min = (a, b) => {return a <= b ? a : b; };
+console.log(min(6800, 200000));
+
+
+	
 
