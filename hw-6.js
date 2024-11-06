@@ -90,7 +90,7 @@ const massiv = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < massiv.length; i++) {
     console.log(massiv[i]);
     if (massiv[i] == 10) {
-        break
+        break;
     }   
 }
 
@@ -98,9 +98,9 @@ for (let i = 0; i < massiv.length; i++) {
 console.log('индекс элемента 4 равняется ' + massiv.indexOf(4));
 
 
-// massiv.forEach((num) => {
-//     if(massiv[num] == 4) {
-//         console.log(massiv[num].indexOf);        
+// massiv.forEach(num => {
+//     if(num == 4) {
+//         console.log(massiv.indexOf(num));        
 //     }
 // })
 
@@ -140,13 +140,13 @@ console.log(sortFilt);
 
 // задание 7
 
-// const guess = [9, 8, 7, 6, 5];
-// let userAnsw = Number(prompt('угадай число'));
-// if (guess.includes(userAnsw)) {
-//     alert('Угадал');
-// } else {
-//     alert('Не угадал');
-// }
+const guess = [9, 8, 7, 6, 5];
+let userAnsw = Number(prompt('угадай число'));
+if (guess.includes(userAnsw)) {
+    alert('Угадал');
+} else {
+    alert('Не угадал');
+}
 
 // задание 8
 
@@ -182,7 +182,61 @@ for (let i = 0; i < (sum.length - 1); i++) {
 
 const arr11 = [3, 5, 8, 1, 9];
 
-square (a) => {
-     const newArr11 = a.map(nu => nu * nu);
+let square = (arr) => {
+    let newArr11 = arr.map(num => num * num);
+    return newArr11;
 
 }
+
+
+console.log(square(arr11));
+
+// задание 12
+
+let getWordLength = (arr) => {
+    return arr.map(word => word.length);
+}
+
+console.log(getWordLength(['это', 'проверка', 'функции']));
+
+// задание 13
+
+let getMinusNull = (arr) => {
+    return arr.filter(num => num < 0);
+}
+console.log(getMinusNull([0, -5, -9, 65]));
+
+
+// задание 14
+
+let random = [];
+let odd = [];
+
+for (let i = 1; i < 11; i++) {
+    let randomNum = Math.floor(Math.random() * 10) + 1;
+    random.push(randomNum);    
+}
+
+for (let i = 0; i < random.length; i++) {
+    if (random[i] % 2 == 0) {
+        odd.push(random[i]);
+    }
+    else {
+        continue;
+    }    
+}
+console.log(random);
+console.log(odd);
+
+// задание 15
+let arr15 = [];
+for (let i = 1; i < 7; i++) {
+    let randomNum = Math.floor(Math.random() * 10) + 1;
+    arr15.push(randomNum);    
+}
+console.log(arr15);
+
+function average (arr) {
+    return arr.reduce((total, number) => total + number, 0) / arr.length;
+}
+console.log(average(arr15));
