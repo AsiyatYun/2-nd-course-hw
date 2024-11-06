@@ -1,25 +1,79 @@
-// // первая игра 
-// let solution = Math.floor(Math.random() * 100) + 1;
-// console.log(solution);
+// //  игра "Угадай число"
+let solution = Math.floor(Math.random() * 100) + 1;
+console.log(solution);
 
-// function gameGuess() {	
-// 	let answer = Number(prompt('Я загадал число от 1 до 100. Попробуй угадать его!'));
-// 	while (answer !== solution) {
-// 		if (answer > solution) {
-// 			alert('Загаданное число меньше');
-// 		} else if (answer < solution) {
-// 			alert('Загаданное число больше');
-// 		} 
-// 		else {
-// 			alert('Некорректное значение');
-// 			break;
-// 		}
-// 		answer = Number(prompt('Попробуй снова!'));	
-// 	}
-// 	if (answer === solution) { 
-// 		alert('Поздравляю! Ты угадал!');
-// 	}	
-// }
+function gameGuess() {	
+	let answer = Number(prompt('Я загадал число от 1 до 100. Попробуй угадать его!'));
+	while (answer !== solution) {
+		if (answer > solution) {
+			alert('Загаданное число меньше');
+		} else if (answer < solution) {
+			alert('Загаданное число больше');
+		} 
+		else {
+			alert('Некорректное значение');
+			break;
+		}
+		answer = Number(prompt('Попробуй снова!'));	
+	}
+	if (answer === solution) { 
+		alert('Поздравляю! Ты угадал!');
+	}	
+}
+
+// игра "Простая арифметика"
+let number1 = Math.floor(Math.random() * 100) + 1;
+let number2 = Math.floor(Math.random() * 100) + 1;
+let operationIndex = Math.ceil((Math.floor(Math.random() * 10) + 1) / 3);
+const operations = ['+', '-', '/', '*']
+
+console.log(number1, number2, operationIndex, operations, operations[operationIndex]);
+let sign = operations[operationIndex];
+let desicion;
+
+function arithmetic() {
+    do {
+        if(number1 >= number2) {
+            max = number1;
+            min = number2;
+        } 
+        else {
+            max = number2;
+            min = number1;
+        }
+        console.log(min, max);
+        
+        
+        if (sign == '+') {
+           desicion = min + max;
+        } 
+        else if(sign == '-') {
+           desicion = max - min;
+        }
+        else if(sign == '/') {
+           desicion = Math.round(max / min);
+        }
+        else if(sign == '*') {
+           desicion = min * max;
+        }
+        
+        let userAnswer = Number(prompt(`Сколько будет ${max} ${sign} ${min}?`));
+        if (userAnswer == desicion) {
+            alert('Угадал!!!');
+        }
+        else {
+            alert('Неверно');
+        }
+        
+    } while (!arithmetic);
+    
+}
+
+
+
+
+
+
 
 
 
@@ -126,7 +180,9 @@ for (let i = 0; i < (sum.length - 1); i++) {
 
 // задание 11
 
-function square ([ar]) {
-    ar[...arr].map
-}
+const arr11 = [3, 5, 8, 1, 9];
 
+square (a) => {
+     const newArr11 = a.map(nu => nu * nu);
+
+}
