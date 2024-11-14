@@ -51,18 +51,90 @@ console.log(newString1);
 
 // задание 2
 
+function fromSecondString(array, str) {
+    return array.filter(item => item.toLowerCase().startsWith(str.toLowerCase()));
+
+}
+console.log(fromSecondString(['apple', 'applause', 'confuse', 'application'], 'appl'));
+
 // задание 3
+
+let num = 32.58884;
+console.log(Math.floor(num));
+console.log(Math.ceil(num));
+console.log(Math.round(num));
 
 // задание 4
 
+let min = Math.min(52, 53, 49, 77, 21, 32);
+let max = Math.max(52, 53, 49, 77, 21, 32)
+console.log(min, max);
+
 // задание 5
+function randomNumber() {    
+    console.log(Math.ceil(Math.random() * 10));
+}
+randomNumber();
 
 // задание 6
 
+function randomArray(a) {
+    let i = 0;
+    let arr6 = [];
+    while(i <= (a / 2) - 1) {
+        arr6[i] = Math.ceil(Math.random() * a);
+        i++;
+    }
+    console.log(arr6);
+    
+}
+
+randomArray(12);
+
 // задание 7
+
+function randomBeetwen(x, y) {
+    if(x < y) {
+        console.log(Math.floor(Math.random() * (y - x + 1)) + x);
+
+    }
+    else {
+        console.log(Math.floor(Math.random() * (x - y + 1)) + y);
+    }
+
+}
+randomBeetwen(9, 7);
 
 // задание 8
 
+console.log(new Date());
+
+
 // задание 9
 
+let currentDate = new Date();
+let after73Days = 73 * 24 * 60 * 60 * 1000;
+let searchDate = +currentDate + after73Days;
+
+console.log(new Date(searchDate));
+
+
 // задание 10
+
+function formatDate(date) {
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг",
+    "Пятница", "Суббота"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+    "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let fullDate = "Дата: " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear() + " это - " + days[date.getDay()];
+
+let time = "Время: " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+console.log(fullDate);
+console.log(time);
+}
+
+formatDate(currentDate)
+
