@@ -45,7 +45,7 @@ function turnTextOver() {
 
 
 // задание 1
-let string1 = String('js');
+let string1 = 'js';
 let newString1 = string1.toUpperCase();
 console.log(newString1);
 
