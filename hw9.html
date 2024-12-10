@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         
+        .releave {
+            display: none;
+        } 
     </style>
 </head>
 <body>
@@ -40,7 +42,7 @@
 
     // задание 1
     releaveBtn.addEventListener('click', function (e) {
-        titleEl.remove();
+        titleEl.classList.toggle('releave');
     });
 
     // задание 2
